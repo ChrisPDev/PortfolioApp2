@@ -2,11 +2,12 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PortfolioApp2.CVPage"
+             NavigationPage.HasNavigationBar="False"
              Title="CV">
     <ContentPage.Content>
-        <ScrollView>
-            <StackLayout Background="LightBlue" Spacing="0">
-                <Frame BackgroundColor="LightBlue">
+        <StackLayout Background="LightBlue" Spacing="0">
+            <Frame BackgroundColor="LightBlue">
+                <ScrollView>
                     <StackLayout Spacing="0">
                         <Frame BackgroundColor="AliceBlue">
                             <StackLayout Spacing="0">
@@ -40,8 +41,16 @@
                             </StackLayout>
                         </Frame>
                     </StackLayout>
-                </Frame>
-            </StackLayout>
-        </ScrollView>
+                </ScrollView>
+            </Frame>
+
+            <Frame BackgroundColor="AliceBlue" Padding="27">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                    <Button x:Name="Back" Text="Tilbage" Clicked="Back_Clicked" HorizontalOptions="CenterAndExpand" CornerRadius="100" HeightRequest="75" WidthRequest="75" Padding="0" />
+                    <Button x:Name="AboutMeNav" Text="Om mig" Clicked="AboutMeNav_Clicked"  HorizontalOptions="CenterAndExpand" CornerRadius="100" HeightRequest="75" WidthRequest="75" Padding="0" />
+                    <Button x:Name="GalleryNav" Text="Galleri" Clicked="GalleryNav_Clicked"  HorizontalOptions="CenterAndExpand" CornerRadius="100" HeightRequest="75" WidthRequest="75" Padding="0" />
+                </StackLayout>
+            </Frame>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

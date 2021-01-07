@@ -16,5 +16,17 @@ namespace PortfolioApp2
         {
             InitializeComponent();
         }
+        private async void AboutMeNav_Clicked(object sender, System.EventArgs e)
+        {
+            await Navigation.PushAsync(new AboutPage());
+        }
+        private async void Back_Clicked(object sender, System.EventArgs e)
+        {
+            await Navigation.PushAsync(new MainPage());
+        }
+        private async void GalleryNav_Clicked(object sender, System.EventArgs e)
+        {
+            await Navigation.PushAsync(new GalleryPage());
+        }
     }
 }

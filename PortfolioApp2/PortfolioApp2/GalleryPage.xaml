@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PortfolioApp2.GalleryPage"
+             NavigationPage.HasNavigationBar="False"
              Title="Galleri">
     <ContentPage.Content>
         <StackLayout BackgroundColor="LightBlue" Spacing="0">
@@ -28,6 +29,14 @@
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
+            </Frame>
+
+            <Frame BackgroundColor="AliceBlue" Padding="27">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                    <Button x:Name="Back" Text="Tilbage" Clicked="Back_Clicked" HorizontalOptions="CenterAndExpand" CornerRadius="100" HeightRequest="75" WidthRequest="75" Padding="0" />
+                    <Button x:Name="CVNav" Text="CV" Clicked="CVNav_Clicked"  HorizontalOptions="CenterAndExpand" CornerRadius="100" HeightRequest="75" WidthRequest="75" Padding="0" />
+                    <Button x:Name="AboutMeNav" Text="Om mig" Clicked="AboutMeNav_Clicked"  HorizontalOptions="CenterAndExpand" CornerRadius="100" HeightRequest="75" WidthRequest="75" Padding="0" />
+                </StackLayout>
             </Frame>
         </StackLayout>
     </ContentPage.Content>

@@ -25,5 +25,18 @@ namespace PortfolioApp2
             gallery.Add(new GalleryBindings { Image = "RedRingHood.jpeg", Title = "Standard baggrunden", Description = "Bruger dette billede som baggrund på alt jeg kan sætte det på." });
             gallery.Add(new GalleryBindings { Image = "tenor.gif", Title = "Fantastisk gif", Description = "Denne gif er smuk og skal selvfølgelig også med i denne app." });
         }
+
+        private async void AboutMeNav_Clicked(object sender, System.EventArgs e)
+        {
+            await Navigation.PushAsync(new AboutPage());
+        }
+        private async void Back_Clicked(object sender, System.EventArgs e)
+        {
+            await Navigation.PushAsync(new MainPage());
+        }
+        private async void CVNav_Clicked(object sender, System.EventArgs e)
+        {
+            await Navigation.PushAsync(new CVPage());
+        }
     }
 }
