@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PortfolioApp2.AboutPage"
+             Title="Om mig">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Background="LightBlue" Spacing="0">
+                <Frame BackgroundColor="LightBlue">
+                    <StackLayout Spacing="0">
+                        <Frame BackgroundColor="AliceBlue">
+                            <StackLayout Spacing="0">
+                                <Label x:Name="Interests" Text="Interesser" HorizontalOptions="Center" FontSize="Medium" />
+                                <Label x:Name="Interests_Text" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." />
+                                <BoxView HorizontalOptions="FillAndExpand" HeightRequest="1" Color="LightBlue"/>
+                            </StackLayout>
+                        </Frame>
+
+                        <Frame BackgroundColor="AliceBlue">
+                            <StackLayout Spacing="0">
+                                <Label x:Name="Strenghts" Text="Styrker og kompetencer" HorizontalOptions="Center" FontSize="Medium" />
+                                <Label x:Name="Strenghts_Text" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." />
+                                <BoxView HorizontalOptions="FillAndExpand" HeightRequest="1" Color="LightBlue"/>
+                            </StackLayout>
+                        </Frame>
+
+                        <Frame BackgroundColor="AliceBlue">
+                            <StackLayout Spacing="0">
+                                <Label x:Name="Projects" Text="Projekter i privaten" HorizontalOptions="Center" FontSize="Medium" />
+                                <Label x:Name="Projects_Text" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." />
+                                <BoxView HorizontalOptions="FillAndExpand" HeightRequest="1" Color="LightBlue"/>
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

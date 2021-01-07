@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PortfolioApp2.MainPage"
+             Title="Profil">
+
+    <StackLayout BackgroundColor="LightBlue" Spacing="0">
+        <Frame BackgroundColor="LightBlue">
+            <StackLayout Spacing="0">
+                <ListView x:Name="ProfileView" ItemsSource="{Binding Profile}" HasUnevenRows="True" VerticalScrollBarVisibility="Never">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout BackgroundColor="LightBlue" Spacing="0">
+                                    <StackLayout BackgroundColor="AliceBlue" Padding="27">
+                                        <Frame CornerRadius="100" HeightRequest="100" WidthRequest="100" HorizontalOptions="Center" Padding="0" IsClippedToBounds="True">
+                                            <Image x:Name="ProfileImg" Source="{Binding ProfileImage}" HorizontalOptions="Center" VerticalOptions="Center" Scale="1.5" IsAnimationPlaying="True" />
+                                        </Frame>
+
+                                        <Label x:Name="ProfileName" Text="{Binding ProfileName}" HorizontalOptions="Center" FontSize="Large" />
+                                        <Label x:Name="ProfileLocation" Text="{Binding ProfileLocation}" HorizontalOptions="Center" FontSize="Caption" />
+                                    </StackLayout>
+
+                                    <StackLayout BackgroundColor="AliceBlue" Padding="20">
+                                        <Label x:Name="FullName" Text="{Binding FullName}" HorizontalOptions="Center" FontSize="Medium" />
+                                        <Label x:Name="Age" Text="{Binding Age}" HorizontalOptions="Center" FontSize="Medium" />
+                                        <Label x:Name="Phone" Text="{Binding Phone}" HorizontalOptions="Center" FontSize="Medium"/>
+                                        <Label x:Name="StreetAdress" Text="{Binding StreetAdress}" HorizontalOptions="Center" FontSize="Medium" />
+                                        <Label x:Name="City" Text="{Binding City}" HorizontalOptions="Center" FontSize="Medium" />
+                                        <Label x:Name="Email" Text="{Binding Email}" HorizontalOptions="Center" FontSize="Medium" />
+                                        <BoxView HorizontalOptions="FillAndExpand" HeightRequest="1" Color="LightBlue"/>
+                                    </StackLayout>
+
+                                    <Frame BackgroundColor="AliceBlue" Padding="27">
+                                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                                            <Button x:Name="AboutMeNav" Text="Om mig" Clicked="AboutMeNav_Clicked"  HorizontalOptions="CenterAndExpand" CornerRadius="100" HeightRequest="75" WidthRequest="75" Padding="0" />
+                                            <Button x:Name="CVNav" Text="CV" Clicked="CVNav_Clicked" HorizontalOptions="CenterAndExpand" CornerRadius="100" HeightRequest="75" WidthRequest="75" Padding="0" />
+                                            <Button x:Name="GalleryNav" Text="Galleri" Clicked="GalleryNav_Clicked"  HorizontalOptions="CenterAndExpand" CornerRadius="100" HeightRequest="75" WidthRequest="75" Padding="0" />
+                                        </StackLayout>
+                                    </Frame>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+</ContentPage>
